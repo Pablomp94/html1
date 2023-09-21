@@ -1,0 +1,78 @@
+<!--PARA PONER COMENTARIOS-->
+
+<hr/> separa mediante una línea.
+<br/> hace un salto de línea.
+<b> </b> pone el texto en negrita.
+<u> </u> pone el texto underline.
+<i> </i> pone el texto en italic.
+<pre> </pre> pone texto preformateado: pone el texto con la misma forma 
+en la que le he puesto, respeta los saltos de línea, tmbn pone el texto 
+en negrita y un márgen.
+------------------------------------------------------------------------
+
+LISTAS = normalmente para hacer menús o indices.
+
+<h3> Listas ordenadas</h3>
+            <ol>
+                <li>Elemento1</li>
+                <li>Elemento2</li>
+                <li>Elemento3</li>
+                <li>Elemento4</li>
+            </ol>
+
+        <h3> Listas desordenadas</h3>
+            <ul>
+                <li>Elemento1</li>
+                <li>Elemento2</li>
+                <li>Elemento3</li>
+                <li>Elemento4</li>
+            </ul>
+
+        <h3> Listas de definicion</h3>
+            <dl>
+                <dt>Capitulo 1</dt>
+                    <dd>Capitulo 1.1</dd>
+                    <dd>Capitulo 1.2</dd>
+                <dt>Capitulo 2</dt>
+                    <dd>Capitulo 2.1</dd>
+                    <dd>Capitulo 2.2</dd>
+            </dl>
+    
+TIPOS DE ENLACES:
+
+        <h2>Externos</h2>
+
+        <a href="http://www.google.es" target="_blank"> Enlace externo </a>
+
+
+        <h2>Internos</h2>
+
+        <a href="libro.html" target="_blank" title="Esta página es de mis libros"> Mi Libro</a>
+
+        <button onclick="document.location='libro.html'">Mis Libros</button>
+
+        
+        <h2>Ancla o dentro del propio html</h2>
+
+        <a href="#YelnombredelID"> NOMBREDELENLACE</a>           
+
+
+
+
+IMAGENES:
+<!--En html no hace falta poner px, con poner una unidad se pone solo en pxls-->
+<!--Tmbn funciona poner en la anchura el porcentaje del tamaño de la ventana-->
+<!--alt: en caso de que no cargue la imagen sale el texto que pongas-->
+<!--title: Es el texto se sale al poner el cursor encima de la imagen-->
+<img src="URLDELAIMAGEN" width="ANCHO" height="ALTURA" alt="" title=""/>
+
+
+TABLAS:
+<!--Se ejecuta con <table></table>-->
+<!--Las filas son con <tr></tr>-->
+<!--Las columnas comunes son con <td></td> y se crean dentro del <tr></tr>-->
+<!--Las columnas principales se hacen con th-->
+<!--Dentro del <table> se puede poner borde a las tablas con border y su anchura con width-->
+<!--Dentro del td o del th o del tr con el colspan="numero de columnas a combinar" combina las columnas -->
+<!--Para expandir las filas es con rowspan="numero de filas a combinar" dentro del tr td o del th-->
+
