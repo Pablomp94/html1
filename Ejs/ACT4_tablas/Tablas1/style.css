@@ -1,0 +1,12 @@
+h1{
+    background-image: linear-gradient(rgb(85, 85, 200), rgb(111, 205, 111));
+}
+
+#tabla1{
+    background-color: rgb(103, 202, 103);
+    margin: auto;
+}
+
+body{
+    background-color: rgb(120, 120, 208);
+}
