@@ -37,3 +37,10 @@ body{
     font-size: 20px;
 }
 
+.boton:hover{
+    cursor: pointer;
+}
+
+.boton:active{
+    background-color: orange;
+}
