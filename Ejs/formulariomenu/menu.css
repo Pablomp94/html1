@@ -1,0 +1,36 @@
+h1{
+    text-align: center;
+    color: red;
+    text-decoration: underline;
+}
+
+table{
+    margin: auto;
+    border-collapse: collapse;
+    background-color: white;
+    
+}
+
+th{
+    border: 2px solid black;
+    font-size: 20px;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    font-size: 2em;
+}
+
+a{
+    color: red;
+}
+
+th:hover{
+    background-color: orange;
+}
+
+a:hover{
+    color: black;
+}
+
+body{
+    background-color: lightgrey;
+}

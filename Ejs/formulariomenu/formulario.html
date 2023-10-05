@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="formulario.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    
+
+    <form>
+      <fieldset>
+        <h1>REGISTRO IES LOS ALBARES</h1>
+        <div>
+          <label class="tit" for="nombre">Nombre</label><br />
+          <input type="text" id="nombre" name="nombre" size="30%" /><br />
+        </div>
+
+        <div>
+          <label class="tit"  for="email">Correo Electrónico</label><br />
+          <input type="email" id="email" name="email" size="50%"/><br />
+        </div>
+
+        <div>
+          <label class="tit" for="contraseña">Contraseña</label><br />
+          <input type="password" id="contraseña" name="contraseña" size="50%" /><br />
+        </div>
+
+        <div>
+          <label class="tit" for="genero">Género</label><br />
+          <input type="radio" id="Masculino" name="genero" value="Masculino" />
+          <label for="genero">Masculino</label>
+          <input type="radio" id="Femenino" name="genero" value="Femenino" />
+          <label for="genero">Femenino</label>
+        </div>
+
+        <div>
+          <label class="tit" for="intereses">Intereses</label><br />
+          <input
+            type="checkbox"
+            id="Deportes"
+            name="intereses"
+            value="Deportes"
+          />
+          <label  for="Deportes">Deportes</label>
+          <input
+            type="checkbox"
+            id="Lectura"
+            name="intereses"
+            value="Lectura"
+          />
+          <label for="Lectura">Lectura</label>
+          <input type="checkbox" id="Cine" name="intereses" value="Cine" />
+          <label for="Cine">Cine</label>
+          <input type="checkbox" id="Viajes" name="intereses" value="Viajes" />
+          <label for="Viajes">Viajes</label>
+        </div>
+
+        <div>
+          <label class="tit" for="Pais">País</label><br />
+          <select class="bot" id="Pais" name="Pais">
+            <option value="España">España</option>
+            <option value="Portugal">Portugal</option>
+            <option value="Andorra">Andorra</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="tit"  for="nacimiento">Fecha de Nacimiento</label><br />
+          <input class="bot" type="date" id="nacimiento" />
+        </div>
+
+        <div>
+          <label class="tit"  for="observaciones">Observaciones</label><br />
+          <input class="observ" type="textarea" id="observaciones" size="30%"/>
+        </div>
+
+        <div>
+          <input class="boton" type="submit" value="Registrarse!"/>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
