@@ -1,10 +1,8 @@
-header{
-    
+iframe{
+    margin-top: 2px;
 }
 
-
-
-a{
+nav a{
     color: blue;
     box-sizing:content-box;
     margin-left: 1%;
@@ -12,11 +10,9 @@ a{
     padding: 2%;
     font-style: bold;
     font-size: 20px;
-
-    
 }
 
-a:hover{
+nav a:hover{
     color:white;
     background-color: blue;
 }

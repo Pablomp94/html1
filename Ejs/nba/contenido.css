@@ -2,7 +2,6 @@ div{
     border: 8px solid blue;
     border-radius: 5px;
     border-collapse: collapse;
-    
 }
 
 h3{
@@ -13,6 +12,10 @@ h3{
 p{
     margin-left: 4px;
     color: grey;
+}
+
+h2{
+    text-align: center;
 }
 
 .texto{
