@@ -1,8 +1,16 @@
-div{
+article{
     border: 8px solid blue;
     border-radius: 5px;
     border-collapse: collapse;
+
 }
+
+
+.video{
+    text-align: center;
+}
+
+
 
 h3{
     margin-left: 4px;
@@ -20,4 +28,9 @@ h2{
 
 .texto{
     margin-top: 2%;
+}
+
+footer p{
+    color: blue;
+    text-align: center;
 }
