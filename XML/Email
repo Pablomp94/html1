@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mail>
+  <mensaje>
+    <remite>
+      <nombre>Alfredo Reino</nombre>
+      <email>alf@gmail.com</email>
+    </remite>  
+      
+    <destinatario>
+      <nombre>Bill Clinton</nombre>
+      <email>bill@gmail.com</email>
+    </destinatario>
+    
+    <asunto>Hola Bill</asunto>
+    
+    <texto>
+      <parrafo>¿Hola que tal?</parrafo>
+      <parrafo>Hace mucho tiempo...</parrafo>
+      <parrafo>Un saludo</parrafo>
+    </texto>
+  </mensaje>  
+
+
+
+</mail>
