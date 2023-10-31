@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<restaurante>
+
+  <menu>
+    <nombre precio="5.95">Gofres Belgas</nombre>  
+    <descripcion>Dos de nuestros...</descripcion>
+    <calorias>650</calorias>
+  </menu>
+  
+  <menu>
+    <nombre precio="7.95">Gofres Belgas con fresas</nombre>  
+    <descripcion>Ligeros gofres belgas...</descripcion>
+    <calorias>900</calorias>
+  </menu>
+  
+  <menu>
+    <nombre precio="8.95">Gofres Belgas con frutas del bosque</nombre>  
+    <descripcion>Ligeros gofres...</descripcion>
+    <calorias>900</calorias>
+  </menu>
+  
+  <menu>
+    <nombre precio="4.50">Tostada Francesa</nombre>  
+    <descripcion>Dos gruesas...<descripcion>
+    <calorias>600</calorias>
+  </menu>
+
+  <menu>
+    <nombre precio="6.95">Desayuno de la casa</nombre>
+    <descripcion>Dos huevos...</descripcion>
+    <calorias>950</calorias>
+  </menu>
+
+
+</restaurante>
