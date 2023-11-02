@@ -1,0 +1,15 @@
+﻿<!ELEMENT modelosSecret (modelo+)>
+<!ELEMENT modelo (nombre,apellidos,edad,nacionalidad,desfiles?,(hombre|mujer))> 
+<!ELEMENT desfiles (marca+)>
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT edad (#PCDATA)>
+<!ELEMENT nacionalidad (#PCDATA)>
+<!ELEMENT marca (#PCDATA)>
+
+<!ELEMENT hombre EMPTY>
+<!ELEMENT mujer EMPTY>
+
+<!ATTLIST modelo altura CDATA #REQUIRED>
+<!ATTLIST modelo peso CDATA #REQUIRED> 
