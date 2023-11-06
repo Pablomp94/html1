@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE videoClub SYSTEM "VideoClubDTD">
+
+<videoClub>
+
+  <facturas>
+    <datosCliente id="1">
+
+      <nombre>Pablo</nombre>
+      <apellidos>Morales Puertas</apellidos>
+      <dni>129380480B</dni>
+      <telefono>3125675445</telefono>
+    
+    
+    </datosCliente>
+
+
+
+    <datosFactura>
+
+    <pelicula idPelicula="2" valoracion="9.8">
+      <caratula>c0360.jpg</caratula>
+      <titulo>El juicio final</titulo>
+      <genero>Accion</genero>
+      <duracion>2h</duracion>
+      <actores>
+        <nombreActor>Manolo</nombreActor>      
+        <nombreActor>Paco</nombreActor>      
+        <nombreActor>Alberto</nombreActor>      
+      </actores>
+    </pelicula>
+
+      <alquileres>
+        <fechaDevolucion>15/11/2023</fechaDevolucion>
+      </alquileres>
+
+      <compras>
+        <dvd>
+          <fechaSalida>02/08/2022</fechaSalida>    
+          <extras/>    
+        </dvd>
+        
+        <cintaVideo>
+          <formato>VHS</formato>
+          <sinRebobinar/>
+        </cintaVideo>
+      </compras>
+    
+      <resguardo>
+        <formaPago>Efectivo</formaPago>
+        <importe>80</importe>    
+      </resguardo>
+    
+    </datosFactura>
+
+  </facturas>
+
+  <facturas>
+    <datosCliente id="2">
+
+      <nombre>Mariano</nombre>
+      <apellidos>Ape1 Ape2</apellidos>
+      <dni>1293804C</dni>
+      <telefono>312567895</telefono>
+    
+    
+    </datosCliente>
+
+
+
+    <datosFactura>
+
+    <pelicula idPelicula="3" valoracion="9.2">
+      <caratula> c0437.jpg</caratula>
+      <titulo>El retumbar</titulo>
+      <genero>Accion</genero>
+      <duracion>3h</duracion>
+      <actores>
+        <nombreActor>Luisa</nombreActor>      
+        <nombreActor>Manolo</nombreActor>      
+        <nombreActor>Fran</nombreActor>      
+      </actores>
+    </pelicula>
+
+      <alquileres>
+        <fechaDevolucion>20/12/2023</fechaDevolucion>
+      </alquileres>
+
+      <compras>
+        <dvd>
+          <fechaSalida>06/03/2022</fechaSalida>    
+          <sinExtras/>    
+        </dvd>
+        
+        <cintaVideo>
+          <formato>VHS</formato>
+          <rebobinada/>
+        </cintaVideo>
+      </compras>
+    
+      <resguardo>
+        <formaPago>Efectivo</formaPago>
+        <importe>80</importe>    
+      </resguardo>
+    
+    </datosFactura>
+
+  </facturas>
+
+</videoClub>

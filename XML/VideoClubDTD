@@ -1,0 +1,43 @@
+﻿<!ELEMENT videoClub (facturas+)>
+<!ELEMENT facturas (datosCliente+, datosFactura+)>
+
+<!ELEMENT datosCliente (nombre, apellidos, dni, telefono)>
+<!ELEMENT datosFactura (alquileres*, compras*, resguardo, pelicula+)>
+
+<!ELEMENT alquileres (fechaDevolucion*)>
+<!ELEMENT compras (dvd*, cintaVideo*)>
+<!ELEMENT resguardo (formaPago, importe)>
+<!ELEMENT pelicula (caratula?, titulo, genero, duracion, actores+)>
+<!ELEMENT caratula ("c0360.jpg" | "c0437.jpg" | "c1201.jpg")>
+
+
+<!ELEMENT actores (nombreActor+)>
+<!ELEMENT dvd (fechaSalida, (extras | sinExtras))>
+<!ELEMENT cintaVideo (formato, (rebobinada | sinRebobinar))>
+
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT dni (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT formaPago (#PCDATA)>
+<!ELEMENT importe (#PCDATA)>
+
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT genero (#PCDATA)>
+<!ELEMENT duracion (#PCDATA)>
+<!ELEMENT nombreActor (#PCDATA)>
+<!ELEMENT formato (#PCDATA)>
+<!ELEMENT fechaSalida (#PCDATA)>
+
+
+<!ELEMENT extras EMPTY>
+<!ELEMENT sinExtras EMPTY>
+
+<!ELEMENT rebobinada EMPTY>
+<!ELEMENT sinRebobinar EMPTY>
+
+
+<!ATTLIST datosCliente id CDATA #REQUIRED>
+<!ATTLIST pelicula idPelicula CDATA #REQUIRED>
+<!ATTLIST pelicula valoracion CDATA #REQUIRED>

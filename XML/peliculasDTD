@@ -13,8 +13,9 @@
 <!ELEMENT actor (#PCDATA)>
 
 <!ELEMENT sin_clasificar EMPTY>
+<!ELEMENT clasificación EMPTY>
 
 <!ATTLIST película código CDATA #REQUIRED>
 <!ATTLIST película duración CDATA #REQUIRED>
 <!ATTLIST película año CDATA "2003">
-<!ATTLIST clasificación edad (tp | 8 | 12 | 16 | 18) "EMPTY">
+<!ATTLIST clasificación edad (tp | 8 | 12 | 16 | 18)>
