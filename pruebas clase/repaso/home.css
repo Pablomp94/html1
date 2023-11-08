@@ -1,0 +1,12 @@
+header{
+    color: red;
+    text-decoration: underline;
+}
+
+#rojo{
+    color: rgb(176, 6, 6);
+    border: 2px solid;
+    padding: 2px;
+    background-color: rgb(240, 211, 211);
+    font-style: italic;
+}
