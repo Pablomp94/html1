@@ -25,5 +25,8 @@
 
     <h1>Nacieste el:</h1>
     <h2><?php echo $_POST["nacimiento"];?></h2>
+
+    <h1>OBSERVACIONES</h1>
+    <h2><?php echo $_POST["observacion"];?></h2>
 </body>
 </html>
