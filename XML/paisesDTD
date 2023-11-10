@@ -1,0 +1,10 @@
+﻿ <!ELEMENT paises (pais*)>
+ <!ELEMENT pais (superficie, moneda+, gobierno, fronteras)>
+ <!ATTLIST pais nombre ID #REQUIRED>
+ <!ELEMENT superficie (#PCDATA)>
+ <!ATTLIST superficie unidad NMTOKEN #REQUIRED>
+ <!ELEMENT moneda (#PCDATA)>
+ <!ELEMENT gobierno EMPTY>
+ <!ATTLIST gobierno sistema NMTOKEN #IMPLIED>
+ <!ELEMENT fronteras EMPTY>
+ <!ATTLIST fronteras pais IDREFS #IMPLIED>

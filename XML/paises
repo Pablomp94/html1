@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE paises SYSTEM "paisesDTD">
+
+<paises>
+
+  <pais nombre="España">
+  
+    <superficie unidad="km2">504645</superficie>
+    
+    <moneda>dvsvsdvsdvsd</moneda>
+  
+    <gobierno sistema="monarquia"/>
+  
+    <fronteras pais="Francia"/>
+  
+  </pais>
+
+  
+  <pais nombre="Francia">
+  
+    <superficie unidad="km2">675417</superficie>
+    
+    <moneda>dvsvsdvsdvsd</moneda>
+  
+    <gobierno sistema="monarquia"/>
+  
+    <fronteras pais="España"/>
+  
+  </pais>
+
+
+
+</paises>
