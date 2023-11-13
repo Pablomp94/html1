@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE liga SYSTEM "Liga2DTD">
+
+<liga>
+  <partido>
+    <equipoLocal goles="0">
+      <nombre>Nottingham Presa</nombre>    
+    </equipoLocal>
+    
+    <equipoVisitante goles="1">
+      <nombre>Inter de Mitente</nombre>    
+    </equipoVisitante>  
+  </partido>
+  
+  <partido>
+    <equipoLocal goles="3">
+      <nombre>Vodka Juniors</nombre>    
+    </equipoLocal>
+    
+    <equipoVisitante goles="3">
+      <nombre>Sparta da Risa</nombre>    
+    </equipoVisitante>  
+  </partido>
+
+  <partido>
+    <equipoLocal goles="4">
+      <nombre>Water de Munich</nombre>    
+    </equipoLocal>
+    
+    <equipoVisitante goles="2">
+      <nombre>Esteaua es del grifo</nombre>    
+    </equipoVisitante>  
+  </partido>
+</liga>
