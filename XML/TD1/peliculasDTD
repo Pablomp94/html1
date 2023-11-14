@@ -1,5 +1,5 @@
 ﻿<!ELEMENT cartelera (película+)>
-<!ELEMENT película (título,título_original,nacionalidad,sin_clasificar,género,sinopsis,director,reparto,web,cartel)> 
+<!ELEMENT película (título,título_original,nacionalidad,(sin_clasificar|clasificación),género,sinopsis,director,reparto,web,cartel)> 
 <!ELEMENT reparto (actor+)>
 
 <!ELEMENT título (#PCDATA)>
@@ -16,6 +16,6 @@
 <!ELEMENT clasificación EMPTY>
 
 <!ATTLIST película código CDATA #REQUIRED>
-<!ATTLIST película duración CDATA #REQUIRED>
+<!ATTLIST película duración CDATA #IMPLIED>
 <!ATTLIST película año CDATA "2003">
 <!ATTLIST clasificación edad (tp | 8 | 12 | 16 | 18)>
