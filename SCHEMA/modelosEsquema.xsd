@@ -4,7 +4,7 @@
 <!--Datos Simples-->
 <!--Atributos-->
 <!--Complejos-->
-        <xs:simpleType name="typoEdad">
+        <xs:simpleType name="tipoEdad">
           <xs:restriction base="xs:integer">
             <xs:minInclusive value="18"/>
             <xs:maxInclusive value="30"/>
@@ -13,13 +13,14 @@
         
         <xs:element name="nombre" type="xs:string"/>
         <xs:element name="Apellidos" type="xs:string"/>
-        <xs:element name="edad" type="typoEdad">
+        <xs:element name="edad" type="tipoEdad">
         <xs:element name="nacionalidad" type="xs:string"/>
         <xs:element name="hombre"/>
         <xs:element name="mujer"/> 
-        
+        <xs:attribute name="altura" type="xs:float"/>
+        <xs:attribute name="peso" type="xs:integer"/>
 
-        <xs:element name="victoriaSecret">
+        <xs:element name="victoriasecret">
         <xs:complexType>
             <xs:sequence>
                 <xs:element ref="modelo" maxOccurs="unbounded"/>
@@ -30,25 +31,28 @@
       <xs:element name="modelo">
         <xs:complexType>
             <xs:sequence> 
-              <xs:element ref="nombre" />
-              <xs:element ref="Apellidos" />
+              <xs:element ref="nombre"/>
+              <xs:element ref="Apellidos"/>
               <xs:element ref="edad"/>
               <xs:element ref="nacionalidad"/>
               <xs:element ref="desfiles" minOccurs="0"/>
-              <choice>
+              <xs:choice>
                   <xs:element name="hombre" type="hombre"/>
                   <xs:element name="mujer" type="mujer"/> 
-              </choice>
+              </xs:choice>
            </xs:sequence>
           <xs:attribute ref="altura"/>
           <xs:attribute ref="peso"/>
         </xs:complexType>
     </xs:element>
-      
+       
+  <xs:element name="desfiles">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="marca" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+      </xs:element>      
 
-        
-        
-      
-    </xs:complexType>
-  </xs:element>
+  
 </xs:schema>

@@ -1,7 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-
-<victoriasecret>    
-
+<victoriasecret  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="modelosEsquema.xsd">    
   <modelo altura="1.71" peso="54">
     <nombre>Barbara</nombre>
     <Apellidos>Palvin</Apellidos>
@@ -12,7 +10,7 @@
       <marca>Pull and Bear</marca>
     </desfiles>
     <mujer/>
-</modelo>
+  </modelo>
 
   <modelo altura="1.75" peso="55">
     <nombre>Lily</nombre>
