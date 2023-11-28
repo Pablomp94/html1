@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+<!--Restricciones-->
+        <xs:simpleType name="numero">
+          <xs:restriction base="xs:integer">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="500"/>
+          </xs:restriction>     
+        </xs:simpleType>
+          
+        <xs:simpleType name="telefono">
+          <xs:restriction base="xs:integer">
+          </xs:restriction>     
+        </xs:simpleType>
+        
+          <xs:simpleType name="provincia">
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Badajoz"/>
+            <xs:enumeration value="Cáceres"/>
+          </xs:restriction>     
+        </xs:simpleType>
+          
+<!--Datos Simples-->
+       <xs:element name="nombre" type="xs:string"/>
+        <xs:element name="calle" type="xs:string"/>
+        <xs:element name="numero" type="xs:integer"/>
+        <xs:element name="ciudad" type="xs:string"/>
+        <xs:element name="provincia" type="xs:string"/>
+        <xs:element name="telefono" type="xs:string"/>
+        <xs:attribute name="dni" type="xs:string"/>
+<!--Complejos-->
+        
+        <xs:element name="alumnos">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="alumno" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>      
+        
+         <xs:element name="alumno">
+        <xs:complexType>
+            <xs:sequence> 
+              <xs:element ref="nombre"/>
+              <xs:element ref="direccion"  minOccurs="1" maxOccurs="2"/>
+              <xs:element ref="telefono"/>
+           </xs:sequence>
+          <xs:attribute ref="dni"/>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="direccion">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="calle"/>
+                <xs:element ref="numero"/>
+                <xs:element ref="ciudad"/>
+                <xs:element ref="provincia"/>
+            </xs:sequence>
+          </xs:complexType>
+      </xs:element>    
+
+  
+</xs:schema>
