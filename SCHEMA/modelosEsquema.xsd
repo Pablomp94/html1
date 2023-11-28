@@ -13,10 +13,11 @@
         
         <xs:element name="nombre" type="xs:string"/>
         <xs:element name="Apellidos" type="xs:string"/>
-        <xs:element name="edad" type="tipoEdad">
+        <xs:element name="edad" type="tipoEdad"/>
         <xs:element name="nacionalidad" type="xs:string"/>
         <xs:element name="hombre"/>
         <xs:element name="mujer"/> 
+        <xs:element name="marca" type="xs:string"/>
         <xs:attribute name="altura" type="xs:float"/>
         <xs:attribute name="peso" type="xs:integer"/>
 
@@ -37,8 +38,8 @@
               <xs:element ref="nacionalidad"/>
               <xs:element ref="desfiles" minOccurs="0"/>
               <xs:choice>
-                  <xs:element name="hombre" type="hombre"/>
-                  <xs:element name="mujer" type="mujer"/> 
+                  <xs:element ref="hombre" />
+                  <xs:element ref="mujer" />
               </xs:choice>
            </xs:sequence>
           <xs:attribute ref="altura"/>
@@ -52,7 +53,9 @@
                 <xs:element ref="marca" maxOccurs="unbounded"/>
             </xs:sequence>
           </xs:complexType>
-      </xs:element>      
+      </xs:element>     
+      
+      
 
   
 </xs:schema>
