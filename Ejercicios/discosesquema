@@ -1,10 +1,133 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
-  <xs:element name="root">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element name="element" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-</xs:schema>
+
+
+        <xs:simpleType name="stock">
+          <xs:restriction base="xs:integer">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="2000"/>
+          </xs:restriction>     
+        </xs:simpleType>
+        
+        
+        <xs:simpleType name="precioType">
+          <xs:restriction base="xs:decimal">
+          <xs:fractionDigits value="2"/>
+          </xs:restriction>
+        </xs:simpleType>
+        
+        <xs:simpleType name="anio">
+          <xs:restriction base="xs:integer">
+          <xs:totalDigits value="4"/>
+          </xs:restriction>
+        </xs:simpleType>        
+        
+        
+        
+        
+        <xs:simpleType name="discografica">
+          <xs:restriction base="xs:string">
+          <xs:pattern value="Sony | CBS | SIRE | OTRAS"/>
+          </xs:restriction>
+        </xs:simpleType>
+        
+        <xs:simpleType name="texto">
+        <xs:restriction base="xs:string">
+        <xs:maxLength value="50"/>
+        </xs:restriction>
+        </xs:simpleType>
+        
+        <xs:simpleType name="dominio">
+          <xs:restriction base="xs:string">
+            <xs:pattern value="+ponprecioamimusica.org+"/>
+            <xs:maxLength value="50"/>
+          </xs:restriction>
+        </xs:simpleType>
+        
+      <xs:element name="nombre" type="texto"/>
+      <xs:element name="calle" type="texto"/>
+      <xs:element name="miembro" type="texto"/>
+      <xs:element name="nacionalidad" type="texto"/>
+      <xs:element name="web" type="dominio"/>
+      <xs:element name="titulo" type="texto"/>
+      <xs:element name="discografica" type="texto"/>
+      <xs:element name="localidad" type="texto"/>
+      <xs:attribute name="anio" type="xs:integer"/>
+      <xs:attribute name="stock" type="xs:integer"/>
+      
+      <xs:attribute name="precio" type="precioType"/>    
+      <xs:attribute name="nom" type="texto"/>    
+  
+    <xs:element name="discos">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="grupo"/>
+                <xs:element ref="disco"/> 
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+
+    <xs:element name="grupo">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="nombre" />
+            <xs:element ref="miembro" maxOccurs="unbounded"/>
+          </xs:sequence>
+          <xs:choice>
+            <xs:element ref="dir1"/>
+            <xs:element ref="dir2"/>
+          </xs:choice>
+          <xs:attribute ref="nom"/>
+        </xs:complexType>
+    </xs:element>
+    
+  
+    <xs:element name="dir1">
+      <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="nacionalidad"/>     
+             <xs:element ref="web"/>
+        </xs:sequence>      
+      </xs:complexType>
+      </xs:element>    
+      
+      
+      <xs:element name="dir2">
+      <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="calle"/>     
+             <xs:element ref="localidad"/>
+        </xs:sequence>      
+      </xs:complexType>   
+      </xs:element>    
+    
+    
+    
+    
+    
+    
+    <xs:element name="disco">
+        <xs:complexType>
+          <xs:sequence> 
+            <xs:element ref="interprete"/>
+            <xs:element ref="titulo"/>
+            <xs:element ref="discografica"/>
+            <xs:element name="anio" type="anio"/>
+            <xs:element name="stock" type="stock"/>
+          </xs:sequence>
+          <xs:attribute ref="precio"/>
+      </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="interprete">
+      <xs:complexType>
+        <xs:simpleContent>
+          <xs:extension base="xs:string">
+            <xs:attribute name="nom" type="xs:string" />        
+          </xs:extension>
+        </xs:simpleContent>
+      </xs:complexType>    
+    </xs:element>
+    
+  </xs:schema>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<discos  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="discos.xsd">
+<discos  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="discosesquema">
   <grupo nom="muse">
     <nombre>MUSE</nombre>
     <miembro>Matthew Bellamy</miembro>
