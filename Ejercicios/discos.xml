@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<discos  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="discosesquema">
+<discos  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="discosesquema.xsd">
   <grupo nom="muse">
     <nombre>MUSE</nombre>
     <miembro>Matthew Bellamy</miembro>
@@ -7,6 +7,7 @@
     <miembro>Chris Wolstenholme</miembro>
     <nacionalidad>Alemania</nacionalidad>
     <web>www.ponprecioamimusica.org/muse</web>
+    <email>Midireccion@ponprecioamimusica.org</email>
   </grupo>
   <grupo nom="feeder">
     <nombre>FEEDER</nombre>
