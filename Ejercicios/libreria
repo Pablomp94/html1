@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
   
-        <xs:simpleType name="codigo">
+        <xs:simpleType name="micodigo">
           <xs:restriction base="xs:integer">
             <xs:minInclusive value="1000"/>
             <xs:maxInclusive value="9999"/>
@@ -9,37 +9,40 @@
         </xs:simpleType>
         
         
-        <xs:simpleType name="telefono">
+        <xs:simpleType name="mitelefono">
           <xs:restriction base="xs:integer">
           <xs:totalDigits value="9"/>
           </xs:restriction>
         </xs:simpleType>
         
         
-        <xs:simpleType name="formato">
+        <xs:simpleType name="miformato">
           <xs:restriction base="xs:string">
-          <xs:pattern value="rústica | tapa blanda | tapa dura"/>
+          <xs:enumeration value="Rústica"/>
+          <xs:enumeration value="Tapa blanda"/>
+          <xs:enumeration value="Tapa dura"/>
           </xs:restriction>
         </xs:simpleType>
         
-      <xs:element name="codigo" type="xs:integer"/>
+      <xs:element name="codigo" type="micodigo"/>
       <xs:element name="direccion" type="xs:string"/>
       <xs:element name="nombre" type="xs:string"/>
-      <xs:element name="telefono" type="xs:integer"/>
+      <xs:element name="telefono" type="mitelefono"/>
       <xs:element name="autor" type="xs:string"/>
-      <xs:element name="formato" type="xs:string"/>
+      <xs:element name="formato" type="miformato"/>
       <xs:element name="publicacion" type="xs:string"/>
       <xs:element name="precio" type="xs:float"/>
       <xs:attribute name="año" type="xs:integer"/>
+      <xs:element name="cantidad" type="xs:integer"/>
 
     <xs:element name="libreria">
         <xs:complexType>
             <xs:sequence>
                 <xs:element ref="codigo"/>
                 <xs:element ref="direccion"/>
-                <xs:element ref="telefono"/>
+                <xs:element ref="telefono" minOccurs="0" maxOccurs="unbounded"/>
                 <xs:element ref="propietario"/>
-                <xs:element ref="libro"/> 
+                <xs:element ref="libro" maxOccurs="unbounded"/> 
             </xs:sequence>
         </xs:complexType>
     </xs:element>
@@ -60,9 +63,10 @@
           <xs:sequence> 
             <xs:element ref="titulo"/>
             <xs:element ref="autor"/>
-            <xs:element ref="formato"/>
-            <xs:element ref="publicacion"/>
-            <xs:element ref="precio"/>
+            <xs:element ref="formato" minOccurs="0"/>
+            <xs:element ref="publicacion" minOccurs="0"/>
+            <xs:element ref="precio" minOccurs="0"/>
+            <xs:element ref="cantidad" minOccurs="0"/>
           </xs:sequence>
       </xs:complexType>
     </xs:element>
@@ -71,7 +75,7 @@
       <xs:complexType>
         <xs:simpleContent>
           <xs:extension base="xs:string">
-            <xs:attribute name="año" type="xs:integer" />        
+            <xs:attribute ref="año"/>        
           </xs:extension>
         </xs:simpleContent>
       </xs:complexType>    
