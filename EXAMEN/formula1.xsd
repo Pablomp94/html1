@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+        <xs:simpleType name="resEdad">
+          <xs:restriction base="xs:integer">
+            <xs:minInclusive value="18"/>
+            <xs:maxInclusive value="40"/>
+          </xs:restriction>     
+        </xs:simpleType>
+        
+        
+        <xs:simpleType name="carrera">
+          <xs:restriction base="xs:string">
+          <xs:pattern value="Monza | Monaco | Silverstone | Nurburgring"/>
+          </xs:restriction>
+        </xs:simpleType>
+        
+        <xs:element name="nombre" type="xs:string"/>
+        <xs:element name="apellidos" type="xs:string"/>
+        <xs:element name="edad" type="resEdad"/>
+        <xs:element name="carrera"/>
+        <xs:element name="hombre"/>
+        <xs:element name="mujer"/> 
+        <xs:attribute name="altura" type="xs:float"/>
+        <xs:attribute name="peso" type="xs:integer"/>
+        <xs:attribute name="titulos" type="xs:integer"/>
+
+        <xs:element name="f1">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="piloto" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>      
+
+      <xs:element name="piloto">
+        <xs:complexType>
+            <xs:sequence> 
+              <xs:element ref="nombre"/>
+              <xs:element ref="apellidos"/>
+              <xs:element ref="edad"/>
+              <xs:element ref="escuderia"/>
+              <xs:element ref="competicion" minOccurs="0"/>
+              <xs:choice>
+                  <xs:element ref="hombre"/>
+                  <xs:element ref="mujer"/>
+              </xs:choice>
+           </xs:sequence>
+          <xs:attribute ref="altura"/>
+          <xs:attribute ref="peso"/>
+        </xs:complexType>
+    </xs:element>
+       
+      <xs:element name="competicion">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="carrera" minOccurs="0" maxOccurs="4"/>
+            </xs:sequence>
+          </xs:complexType>
+      </xs:element>     
+      
+    <xs:element name="escuderia">
+      <xs:complexType>
+        <xs:simpleContent>
+          <xs:extension base="xs:string">
+            <xs:attribute ref="titulos"/>        
+          </xs:extension>
+        </xs:simpleContent>
+      </xs:complexType>    
+    </xs:element>
+      
+
+  
+</xs:schema>

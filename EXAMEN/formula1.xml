@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<f1  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="formula1.xsd">
+<piloto altura="1.71" peso="70">
+<nombre>Carlos</nombre>
+<apellidos>Sainz</apellidos>
+<edad>29</edad>
+<escuderia titulos="20">Ferrari</escuderia>
+<competicion>
+<carrera>Monaco</carrera>
+<carrera>Monza</carrera>
+</competicion>
+<hombre/>
+</piloto>
+<piloto altura="1.68" peso="51">
+<nombre>Patricia</nombre>
+<apellidos>Jordan</apellidos>
+<edad>28</edad>
+<escuderia titulos="2">Williams</escuderia>
+<mujer/>
+</piloto>
+<piloto altura="1.75" peso="55">
+<nombre>Max</nombre>
+<apellidos>Verstapen</apellidos>
+<edad>22</edad>
+<escuderia titulos="6">Red Bull Racing</escuderia>
+<competicion>
+<carrera>Monaco</carrera>
+<carrera>Monza</carrera>
+<carrera>Silverstone</carrera>
+</competicion>
+<hombre/>
+</piloto>
+<piloto altura="1.86" peso="73">
+<nombre>Esteban</nombre>
+<apellidos>Ocon</apellidos>
+<edad>28</edad>
+<escuderia titulos="0">Alpine</escuderia>
+<competicion>
+<carrera>Monaco</carrera>
+<carrera>Monza</carrera>
+<carrera>Silverstone</carrera>
+<carrera>Nurburgring</carrera>
+</competicion>
+<hombre/>
+</piloto>
+<piloto altura="1.78" peso="65">
+<nombre>Fernando</nombre>
+<apellidos>Alonso</apellidos>
+<edad>40</edad>
+<escuderia titulos="0">Aston Martin</escuderia>
+<competicion>
+<carrera>Monaco</carrera>
+<carrera>Monza</carrera>
+<carrera>Silverstone</carrera>
+<carrera>Nurburgring</carrera>
+</competicion>
+<hombre/>
+</piloto>
+<piloto altura="1.81" peso="73">
+<nombre>Lewis</nombre>
+<apellidos>Hamilton</apellidos>
+<edad>34</edad>
+<escuderia titulos="12">Mercedes</escuderia>
+<competicion>
+<carrera>Monaco</carrera>
+<carrera>Monza</carrera>
+<carrera>Silverstone</carrera>
+<carrera>Nurburgring</carrera>
+</competicion>
+<hombre/>
+</piloto>
+</f1>

@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<fct>
+
+  <alumno>
+    <numeroExpediente>1</numeroExpediente>  
+    <nombre>Pablo</nombre>
+    <apellidos>Morales Puertas</apellidos>
+    <edad>19</edad>
+    <cicloFormativo>2DAW</cicloFormativo>
+    <añoTerminacionfct>2023</añoTerminacionfct>
+    <otrosCiclos>
+      <ciclo>1DAW</ciclo>    
+    </otrosCiclos>
+    <tipoTrabajo>
+      <presencial/>    
+    </tipoTrabajo>
+  </alumno>
+  
+  <alumno>
+    <numeroExpediente>2</numeroExpediente>  
+    <nombre>Lucia</nombre>
+    <apellidos>Martinez Salmeron</apellidos>
+    <edad>21</edad>
+    <cicloFormativo>2DAM</cicloFormativo>
+    <añoTerminacionfct>2021</añoTerminacionfct>
+    <otrosCiclos>
+      <ciclo>DAW</ciclo>    
+      <ciclo>Sistemas</ciclo>    
+    </otrosCiclos>
+    <tipoTrabajo>
+      <online/>    
+    </tipoTrabajo>
+  </alumno>
+  
+  <alumno>
+    <numeroExpediente>3</numeroExpediente>  
+    <nombre>David</nombre>
+    <apellidos>Moreno Lopez</apellidos>
+    <edad>20</edad>
+    <cicloFormativo>2DAW</cicloFormativo>
+    <añoTerminacionfct>2022</añoTerminacionfct>
+    <otrosCiclos>
+      <ciclo>DAM</ciclo>
+      <ciclo>Administrativo</ciclo>    
+    </otrosCiclos>
+    <tipoTrabajo>
+      <presencial/>    
+    </tipoTrabajo>
+  </alumno>
+  
+  <alumno>
+    <numeroExpediente>4</numeroExpediente>  
+    <nombre>Daniel</nombre>
+    <apellidos>Lopez Saorin</apellidos>
+    <edad>18</edad>
+    <cicloFormativo>Carroceria</cicloFormativo>
+    <añoTerminacionfct>2023</añoTerminacionfct>
+    <otrosCiclos>
+      <ciclo>DAW</ciclo>    
+      <ciclo>Mecatronica</ciclo>    
+    </otrosCiclos>
+    <tipoTrabajo>
+      <presencial/>    
+    </tipoTrabajo>
+  </alumno>
+  
+  <alumno>
+    <numeroExpediente>5</numeroExpediente>  
+    <nombre>Alejandro</nombre>
+    <apellidos>Ramos Puertas</apellidos>
+    <edad>24</edad>
+    <cicloFormativo>Sanitario</cicloFormativo>
+    <añoTerminacionfct>2019</añoTerminacionfct>
+    <otrosCiclos>
+      <ciclo>Comercio</ciclo>    
+      <ciclo>Administrativo</ciclo>    
+    </otrosCiclos>
+    <tipoTrabajo>
+      <presencial/>    
+    </tipoTrabajo>
+  </alumno>
+
+</fct>

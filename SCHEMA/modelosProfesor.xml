@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<victoriasecret  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="modelosEsquema.xsd">    
+<victoriasecret  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="modelosEsquema.xsd">
   <modelo altura="1.71" peso="54">
     <nombre>Barbara</nombre>
     <Apellidos>Palvin</Apellidos>

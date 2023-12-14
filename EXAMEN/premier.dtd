@@ -1,0 +1,16 @@
+<!ELEMENT premierLeague (Matchinfo+, Club+)>
+<!ELEMENT Club (Starting11, Substitutes)>
+<!ELEMENT Starting11 (Player+)>
+<!ELEMENT Substitutes (Player+)>
+<!ELEMENT Matchinfo EMPTY>
+<!ATTLIST Matchinfo match_name NMTOKEN #REQUIRED>
+<!ATTLIST Starting11 formation_desc NMTOKEN #REQUIRED>
+<!ATTLIST Club side (away | home) #REQUIRED>
+<!ATTLIST Club club_id ID #REQUIRED>
+<!ELEMENT Player EMPTY>
+<!ATTLIST Player player_id ID #REQUIRED>
+<!ATTLIST Player position_desc NMTOKENS #IMPLIED> 
+
+ 
+ 
+ 

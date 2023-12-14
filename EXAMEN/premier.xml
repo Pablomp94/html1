@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE premierLeague SYSTEM "premier.dtd">
+<premierLeague>
+<Matchinfo match_name="Liverpool-Burnley"/>
+<Club side="away" club_id="BURNLEY">
+<Starting11 formation_desc="1-4-4-2">
+<Player player_id="NICK-POPE" position_desc="Goalkeeper"/>
+<Player player_id="MATTHEW-LOWTON" position_desc="Right Back"/>
+<Player player_id="JAMES-TARKOWSKI" position_desc="Central Back"/>
+<Player player_id="BEN-MEE" position_desc="Central Back"/>
+<Player player_id="CHARLIE-TAYLOR-1" position_desc="Left Back"/>
+<Player player_id="ROBERT-BRADY" position_desc="Right Midfielder"/>
+<Player player_id="ASHLEY-R-WESTWOOD" position_desc="Central Midfielder"/>
+<Player player_id="JOSH-BROWNHILL" position_desc="Central Midfielder"/>
+<Player player_id="DWIGHT-MCNEIL" position_desc="Left Midfielder"/>
+<Player player_id="CHRIS-WOOD" position_desc="Forward"/>
+<Player player_id="ASHLEY-BARNES" position_desc="Forward"/>
+</Starting11>
+<Substitutes>
+<Player player_id="MATEJ-VYDRA"/>
+<Player player_id="JAY-RODRIGUEZ"/>
+<Player player_id="JOHANN-BERG-GUDMUNDSSON"/>
+<Player player_id="DALE-STEPHENS"/>
+<Player player_id="JACK-CORK"/>
+<Player player_id="KEVIN-LONG"/>
+<Player player_id="ERIK-PIETERS"/>
+<Player player_id="PHILLIP-BARDSLEY"/>
+<Player player_id="BAILEY-PEACOCKFARRELL"/>
+</Substitutes>
+</Club>
+<Club side="home" club_id="LIVERPOOL">
+<Starting11 formation_desc="1-4-3-3">
+<Player player_id="ALISSON-BECKER" position_desc="Goalkeeper"/>
+<Player player_id="TRENT-ALEXANDERARNOLD" position_desc="Right Back"/>
+<Player player_id="JOEL-MATIP" position_desc="Central Back"/>
+<Player player_id="FABIO-HENRIGUE-TAVARES" position_desc="Central Back"/>
+<Player player_id="ANDREW-ROBERTSON-1" position_desc="Left Back"/>
+<Player player_id="ALEX-OXLADECHAMBERLAIN" position_desc="Central Midfielder"/>
+<Player player_id="THIAGO-ALCANTARA" position_desc="Central Midfielder"/>
+<Player player_id="GEORGINIO-WIJNALDUM" position_desc="Central Midfielder"/>
+<Player player_id="XHERDAN-SHAQIRI" position_desc="Forward"/>
+<Player player_id="SADIO-MANE" position_desc="Forward"/>
+<Player player_id="DIVOCK-ORIGI" position_desc="Forward"/>
+</Starting11>
+<Substitutes>
+<Player player_id="TAKUMI-MINAMINO"/>
+<Player player_id="ROBERTO-FIRMINO"/>
+<Player player_id="MOHAMED-SALAH"/>
+<Player player_id="CURTIS-JONES"/>
+<Player player_id="JAMES-MILNER"/>
+<Player player_id="NATHANIEL-PHILLIPS"/>
+<Player player_id="NECO-WILLIAMS"/>
+<Player player_id="KONSTANTINOS-TSIMIKAS"/>
+<Player player_id="CAOIMHIN-KELLEHER"/>
+</Substitutes>
+</Club>
+</premierLeague>
