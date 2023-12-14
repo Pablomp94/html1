@@ -67,8 +67,8 @@
     <xs:element name="discos">
         <xs:complexType>
             <xs:sequence>
-                <xs:element ref="grupo"/>
-                <xs:element ref="disco"/> 
+                <xs:element ref="grupo" maxOccurs="unbounded"/>
+                <xs:element ref="disco" maxOccurs="unbounded"/> 
             </xs:sequence>
         </xs:complexType>
     </xs:element>
@@ -87,8 +87,8 @@
               <xs:element ref="email" minOccurs="0"/>
             </xs:sequence> 
             <xs:sequence>
-              <xs:element ref="calle"/>     
-              <xs:element ref="localidad"/>
+              <xs:element ref="calle" minOccurs="0"/>     
+              <xs:element ref="localidad" minOccurs="0"/>
             </xs:sequence> 
           </xs:choice>
           </xs:sequence>
