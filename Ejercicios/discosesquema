@@ -60,10 +60,10 @@
   
     <xs:element name="discos">
         <xs:complexType>
-            <xs:sequence>
-                <xs:element ref="grupo"/>
-                <xs:element ref="disco"/> 
-            </xs:sequence>
+            <xs:all>
+                <xs:element ref="grupo" maxOccurs="unbounded"/>
+                <xs:element ref="disco" maxOccurs="unbounded"/> 
+            </xs:all>
         </xs:complexType>
     </xs:element>
     
